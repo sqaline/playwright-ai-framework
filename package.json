@@ -1,0 +1,55 @@
+{
+  "name": "playwright-framework-template",
+  "version": "1.0.0",
+  "description": "Reusable Playwright automation framework with Page Object Model, Smart Page Objects, and role-based testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:examples": "playwright test tests/examples",
+    "test:verification": "playwright test tests/framework-verification.spec.ts",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:codegen": "playwright codegen",
+    "mcp:start": "npx @playwright/mcp@latest",
+    "mcp:debug": "npx @playwright/mcp@latest --debug",
+    "report:generate": "ts-node scripts/generate-report.ts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "setup": "ts-node scripts/setup-local.ts"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "framework",
+    "page-object-model",
+    "e2e",
+    "qa",
+    "testing-tools"
+  ],
+  "author": "",
+  "license": "ISC",
+  "framework": {
+    "name": "automation-framework",
+    "version": "1.0.0",
+    "description": "Reusable Playwright automation framework"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "openai": "^4.77.0"
+  }
+}

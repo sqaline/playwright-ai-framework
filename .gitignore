@@ -1,0 +1,70 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+*.js
+*.d.ts
+*.js.map
+!playwright.config.ts
+!jest.config.js
+
+# Playwright
+playwright-report/
+playwright/.cache/
+test-results/
+blob-report/
+.playwright/
+
+# Reports
+reports/*.json
+reports/*.md
+!reports/.gitkeep
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Authentication state (Playwright)
+auth/
+*.auth.json
+
+# Internal docs (keep locally, exclude from GitHub)
+docs/CODEGEN-POM-BEST-PRACTICES.md
+docs/codegen-workflow.md
+docs/QUICK-START-CODEGEN.md
+docs/TEMPLATE_SETUP.md
+docs/dependent-dropdowns-guide.md
+docs/smart-pageobject-usage.md
+
+# AI assistant config (local only)
+CLAUDE.md
+mcp.config.json
